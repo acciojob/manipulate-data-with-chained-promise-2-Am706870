@@ -13,7 +13,7 @@ function processArray() {
                 return new Promise(resolve => {
                     setTimeout(() => {
                         const evens = numbers.filter(num => num % 2 === 0);
-                        outputDiv.textContent = evens.join(", ");
+                        outputDiv.textContent = evens.join(",");
                         resolve(evens);
                     }, 1000);
                 });
@@ -23,7 +23,7 @@ function processArray() {
                 return new Promise(resolve => {
                     setTimeout(() => {
                         const doubled = evens.map(num => num * 2);
-                        outputDiv.textContent = doubled.join(", ");
+                        outputDiv.textContent = doubled.join(",");
                         resolve(doubled);
                     }, 2000);
                 });
